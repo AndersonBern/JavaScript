@@ -1,0 +1,463 @@
+Jasva Script
+
+<h1> : Titulo da página.
+
+<p> : Parágrafo.
+
+<style> : CSS. Tudo escrito nessa tag é CSS!. FICA EM <head> do HTML.
+
+	background-color : cor de fundo da página.
+
+	color : cor das letras da página.
+
+	font : estilo de fonte com 3 parametros.
+		ex.: font: normal 20pt arial;
+
+<script> : Parte onde fica o código de JS. Obs.: Fica em <body> do HTML.
+
+ window. : Para aparecer uma janela de interação na página.
+
+	window.alert : Uma janela com um alerta.
+	window.confirm : Uma janela de confirmação.
+	window.prompt : Uma janela de perguntas.
+
+// : Comentário em uma única linha.
+
+/* */: Comentário em mais de uma linha.
+
+= : Recebe.
+
+var : Cria uma variável.
+
+	var a1 = 1 : cria uma variável numérica.
+
+	var a1 = 'olá.' : Cria uma variável string.
+
+
++ : Concatenação(string). Como se fosse ',' em phython
+
+${} : Pra colocar variaveis dentro das aspas.(Só funciona com ` ` ) crazes.
+	ex.: `A soma de ${n1}  e ${n2} é ${soma}`.
+
+
+parseInt(n) : Converte uma string em numero inteiro.
+
+parseFloat(n) : Converte uma string em um numero com ponto flutuante.
+
+Number : Converte uma string pra numero(Mais recomendado)
+
+
+String(n.value) ou n.toString() : Converte um numero para string.
+
+
+.length() : Conta os carateres da string.
+
+.toUpperCase() : Deixa todos os caracteres maiúsculos.
+
+.toLowerCase() : Deixa todos os caracteres minusculos.
+
+document.write() : Vai escrever na tela. (Print)
+
+<br/> : Quebra de linha.
+
+<strong> : Negrito.
+
+.toFixed() : Mostra o numero de casas depois da virgula de um numero real.
+
+
+.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) : Macete para converter para REAL brasileiro.
+
+
+OPERADORES
+
+% : Resto da divisão.
+
+** : Potência.
+
+
+ordem de
+Precedência: ()   =>   **   =>   *, /, %   =>   +, -
+	  primeiro   segundo    terceiro      quarto
+
+
+Operadores Lógicos
+
+! : Negação.
+
+&& : Conjunção. Se lê 'e'.
+
+|| : Disjunção. Se lê 'ou'.
+
+
+Operadores Ternário
+
+? : Verdadeiro. Se sim.
+
+: : False. Se não.
+
+		ex.: media = 6
+		     media >= 6 ? 'verdadeiro' : 'Reprovado'
+
+			Ler se: Se média é maior igual a 6,
+			APROVADO. Se não REPROVADO. 
+
+
+.getElementsByTagName() : Vai pegar o elemento de determinada tag.
+
+		ex.: var p1 = document.getElementsByTagName('p')[0]
+		o numero dentro dos colchetes é em relação ao numero
+		de tags. No caso foi pego o valor do primeiro <p>.
+
+
+.getElementsById() : Vai pegar o elemento pelo id.
+
+.getElementsByName() : Vai pegar o elemento pelo nome.
+
+
+.innerText : Pega o conteudo dentro do elemento.
+
+
+.querySelector(): Vai pegar o elemento pelo seletor.
+
+		ex.: var d = document.querySelector('div#msg')
+
+		Quando for um id ou nome usamos '#' para a tag.
+		qundo for uma classe usamos '.' para a tag.
+
+
+Eventos DOM
+
+width: É a altura da <div>
+
+height: É a largura da <div>
+
+		ex.: div#area {
+            		width: 200px;
+            		height: 200px;
+		}
+
+		Define a altura e largura para 200px.
+
+
+function : Função.
+
+onclick : Chama a função quando o usurio clicar.
+
+onmouseenter : Chama a função quando o usuario entrar com o cursor.
+
+onmouseout : Chama a função quando o usuario sair co o cursor.
+
+		ex.: onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"
+
+		Onde 'clicar()', 'entrar()', 'sair()' são funções.
+
+
+Ou também posso chamar a função para a ação com o mouse com:
+
+	.addEventListener() : Adiciona um evento para a ação.
+
+		ex.:    a.addEventListener('click', clicar)
+        		a.addEventListener('mouseenter', entrar)
+        		a.addEventListener('mouseout', sair)
+
+
+margin-top: para dar um espaço na parte de cima de um elemento.(EM CSS)
+
+	ex.: div#res {
+           	 margin-top: 20px;
+       	     }
+
+
+
+Condições
+
+Em JS(Node js):
+
+	console.log() : Para printar no terminal.
+
+if() : se.
+
+else if() : Se não se.
+
+else() : Se não.
+
+
+(DICA)Para pegar a hora atual:
+
+	var agora = new Date() 
+	var hora = agora.getHours()
+
+	Cria uma variavel 'agora' para pegar os dados do sistema.
+	E outra 'hora' para pegar a hora.
+	(Também pode ser feito com dia, mês e ano)
+	
+switch(): É uma estrutura que utiliza varios 'cases' para testar
+	  condições.
+
+		ex.: switch(condição) {
+			case valor 1:
+
+				break
+			case valor 2:
+
+				break
+			default:
+
+				break
+		}
+	Em todos os cases e default é OBRIGATÓRIO o 'break'.
+
+HTML:
+
+<header>: é o cabeçalho do site
+<section>: é o centro do site, onde vai o conteúdo.
+<footer>: é o rodapé do site.
+
+Para codar CSS em um arquivo externo e utilizar no site:
+
+<link>: Para criar um link.
+	<link rel="stylesheet" href="estilo.css">
+
+	Vai criar um link que utiliza o arquivo externo.
+
+
+onload = function() : Para carregar a função pro html.
+
+	ex.: <body onload="carregar()">
+		Vai carregar a função 'carregar()' para o body
+		do HTML.
+
+CSS:
+
+border-radius: Parar arredondar as bordas.
+
+padding: Para aumentar o tamnaho do elemento.
+
+width: Largura.
+length: Altura.
+
+margin: Para centralizar o elemento.
+
+text-align: Para centralizar o texto.
+
+box.shadow: Para adicionar sombra ao elemento.
+
+	ex.: box-shadow: 5px 5px 10px black;
+
+	São 3 parametros: 1 - Deslocamento lateral;
+			  2 - Deslocamento vertical;
+			  3 - Espalhamento.
+
+
+JAVASCRIPT:
+
+img.src ou .src : Para alterar imagens do HTML.
+
+.append() : Para adicionar algo no html.
+
+document.body.style : Para alterar CSS
+
+	ex.:  document.body.style.backgroundColor = '#ca5406'
+
+	Vai alterar a 'cor de fundo'. OBS.: SEMPRE COLOQUE # 
+	ANTES DO CODIGO HEXA da cor.
+
+
+.style.textAlign : Para colocar o texto no centro.
+
+
+
+document.creatElement('img') : Para criar uma imagem no HTML
+			       pelo JS.
+
+.setAttribute() : Para adicionar um atributo a um elemento.
+
+		ex.: var img = document.createElement('img')
+        	     img.setAttribute('id', 'foto')
+
+		Vai criar uma variavel contendo uma imagem.
+		E cria um 'ID' chamado 'foto'.
+
+Para adicionar a imagem desejada:
+
+	ex.: img.setAttribute('src', 'foto.png')
+
+	Vai selecionar a imagem desejada com 'src', e o nome
+	da imagem 'foto.png'.
+
+Para mostrar a imagem ou um elemento no html use .appendChild()
+
+	ex.: res.appendChild(img)
+
+	Vai mostrar o elemento dentro da variavel(imagem).
+
+
+
+
+Para saber se uma 'input radio' foi marcada:
+
+	ex.: if (radio[0].checked)
+
+	Se a primeira opção do radio estiver marcada, vai...
+	Cason tenham mais opções vai usando 'else if'.
+
+Para adicionar algo ao HTML com JS:
+
+	.append() : Vai adicionar um elemento.
+
+	.innerHTML += : Vai Concatenar sem substituir.
+
+		ex.: res.innerHTML += `${fim} \u{1F449}	`
+
+
+Para adicionar emoji (com unicode):
+
+	\u {codigo} : Vai mostrar um emoji. Só funciona com
+		      Crazes.
+
+		ex.: res.innerHTML += `${fim} \u{1F449}`
+
+
+
+<select> : Vai criar um quadro com opções.
+
+	<option> : Cria uma opção.
+
+	Para  adicionar algo no <select> com JS:
+
+	     ex.: var item = document.createElement('option')
+        	  item.text = 'Mensagem'
+        	  tab.appendChild(item)
+
+	No caso, 'item' é o que vamos adicionar. E o 'tab'
+	(neste caso) é a variavel ligada ao <select>.
+
+
+let x : Cria uma váriavel mais eficiente.kkkk
+
+
+
+
+Estrutura de laços(Repetição)
+
+while() : Enquanto. Estrutura de repetição com teste lógico no
+	  INICIO. 
+
+do{} while() : Faça enquanto. Estrutura de repetição com teste
+	       lógico no FINAL.
+
+for(inicio; teste; incremento) : Enquanto o teste lógico for
+				 verdadeiro, continua.
+
+		ex.: for (var c = 1; c <= 10; c++) {
+    			  console.log('Bem vindo!')
+		     }
+		Vai repetir até o 'c' ser igual a 10.
+		E escrever 'bem vindo'
+
+
+
+VARIÁVEIS COMPOSTAS(array)
+
+let x = [] : Vai criar uma variavel com vetor, capaz de
+	     guardar vários valores.
+
+Para adicionar um valor em um vetor caso o espaço não exista:
+
+	num.push(1): Vai criar um espaço no fim do vetor e 
+		     coloca o valor '1'.
+
+Para adicionar um valor em um espaço especifico:
+
+	num[3] = 1 : Vai adicionar o valor '1' no espaço [3]
+		     do vetor.
+
+
+.sort() : Vai organizar os valores dentro de um vetor. do
+	     menor para o maior.
+
+		(OBS.: Este método só pega a
+	        primeira casa do valor e não o valor total.
+
+		ex.: SE TIVEREM OS VALORES [2, 4, 300] DENTRO
+		     DE UM VETOR, O MÉTODO .sort vai organizar
+		     assim: [2, 300, 4] pois a primeira casa
+		     de 300 é '3', menor que 4.)
+
+EXISTE UM 'for' especifico para vetores:
+
+	for (let pos in valores){} : Cria a variavel de indice
+			'pos' e faz ela percorrer todo o vetor
+			incrementando +1 no valor do 'pos'.
+	
+
+.indexOf(1) : Vai mostrar a posição em que o valor '1' está.
+	
+	OBS.: SE O VALOR NÃO EXISTIR NO VETOR VAI RETORNAR '-1'.
+
+
+Para o esvaziar o 'input' ao clicar no 'button' que chama a
+função:
+	
+	ex.: num.value = ''
+    	     num.focus()
+
+	Neste caso a variavel 'num', é onde o valor seria 
+	guardado, recebe ''(vazio) para esvaziar o imput.
+	
+	E o '.focus()' é para o icone de texto voltar para o
+	input, e poder digitar sem precisar apagar o anterior.
+
+	
+	
+	
+
+
+
+FUNÇÕES
+
+São as ações executadas assim que são chamadas ou em 
+decorrencia de algum evento.
+
+Para uma função que utilize 2 valores, você pode defini-los
+antes para evitar um possivel erro. Caso o usuario não defina
+os valores.
+
+	ex.: function soma (n1=0, n2=0) {}
+
+	No caso eu já defini como 'zero', para não dar erro caso
+	o usuário não defina.
+
+Para chamar uma função basta digitar o nome dela e o parametro.
+
+	ex.: soma(2, 3)
+
+	No caso, 'soma' é a função e '2 , 3' são os parametros.
+
+
+
+
+
+
+
+PROXIMOS PASSOS:
+
+Fazer o curso de HTML:5 e CSS!;
+
+Estude MUITO sobre 'functions';
+
+Estude MUITO sobre 'OBJETOS';
+
+Etude MUITO sobre 'MODULARIZAÇÃO';
+
+Estude MUITO sobre 'RegEx' Expressões regulares.;
+
+Estude MUITO sobre 'JSON';
+
+Estude MUITO sobre 'AJAX';
+
+Estude MUITO sobre 'NodeJS'.
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercicio</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Teste de região</h1>
+    </header>
+
+    <section>
+        <div> 
+            <p>Qual a sua Região do Brasil ?</p>
+            <input type="radio" name="regiao" id="nordeste" checked>
+            <label for="nordeste">Nordeste</label>
+            <input type="radio" name="regiao" id="sudeste">
+            <label for="sudeste">Sudeste</label>
+            <input type="radio" name="regiao" id="norte">
+            <label for="norte">Norte</label>
+            <input type="radio" name="regiao" id="sul">
+            <label for="sul">Sul</label>
+            <input type="radio" name="regiao" id="centro">
+            <label for="centro">Central</label>
+
+            <p>Sexo:
+                <input type="radio" name="sexo" id="masc" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="feminino">Feminino</label>
+
+            </p>
+            
+
+            <input type="button" value="Verificar" onclick="verificar()">
+
+        </div>
+        <div id="res">
+            <p>O que você é ?</p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo </p>
+    </footer>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

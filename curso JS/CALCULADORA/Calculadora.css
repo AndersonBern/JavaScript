@@ -1,0 +1,43 @@
+body {
+    background-color: aquamarine;
+    font: normal 10px Arial;
+}
+
+div {
+    background-color: rgb(162, 67, 250);
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+    width: 120px;
+    font: normal 10px Arial;
+
+}
+div#res {
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: auto;
+    width: 120px;
+    padding: 10px;
+    
+}
+
+p#linha1 {
+    margin: auto;
+    padding: 3px;
+    background-color: orange;
+}
+p#linha2 {
+    margin: auto;
+    padding: 3px;
+    background-color: orange;
+}
+p#linha3 {
+    margin: auto;
+    padding: 3px;
+    background-color: orange;
+}
+p#linha4 {
+    margin: auto;
+    padding: 3px;
+    background-color: orange;
+}

@@ -1,0 +1,28 @@
+Curso DEV em DOBRO
+
+* HTML e CSS (Cerca de 2 meses);
+
+* JavaScript (Cerca de 2 meses);
+
+* React, TypeScript e Redes: LinkedIn e gitHub (Cerca de 2 meses);
+
+* BackEnd (A partir do fim dos outros conhecimentos);
+
+
+DICAS: 
+
+- Investir em cusos;
+
+- FrontEnd Mentor (Site de desafios);
+
+- Foque nas redes: LinkedIn e gitHub.(Curriculo e portifólio);
+
+- Curriculo:
+	* Cargo;
+	* Texto (Sobre mim);
+	* Portifólio;
+	* Lista de linguagens;
+	* Lista de SoftSkills;
+	* Listab de ferramentas;
+	* Coloque bem a vista os botões: LinkedIn e GitHub; 
+
