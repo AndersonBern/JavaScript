@@ -1,6 +1,6 @@
 body {
     background-color: aquamarine;
-    font: normal 10px Arial;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 div {
@@ -16,11 +16,11 @@ div#res {
     background-color: aliceblue;
     border-radius: 5px;
     margin: auto;
-    width: 120px;
+    width: 100px;
     padding: 10px;
+    margin-bottom: 5px;
     
 }
-
 p#linha1 {
     margin: auto;
     padding: 3px;
