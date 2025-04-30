@@ -102,7 +102,7 @@ function botao2() {
 }
 
 function botao3() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('3')
         res.innerHTML = '3'
@@ -114,7 +114,7 @@ function botao3() {
 }
 
 function botao4() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('4')
         res.innerHTML = '4'
@@ -126,7 +126,7 @@ function botao4() {
 }
 
 function botao5() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('5')
         res.innerHTML = '5'
@@ -138,7 +138,7 @@ function botao5() {
 }
 
 function botao6() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('6')
         res.innerHTML = '6'
@@ -149,7 +149,7 @@ function botao6() {
     }    
 }
 function botao7() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('7')
         res.innerHTML = '7'
@@ -161,7 +161,7 @@ function botao7() {
     
 }
 function botao8() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('8')
         res.innerHTML = '8'
@@ -173,7 +173,7 @@ function botao8() {
     
 }
 function botao9() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('9')
         res.innerHTML = '9'
@@ -185,7 +185,7 @@ function botao9() {
     
 }
 function botao0() {
-    if (vetor.length == 0 || vetor[0] == result) {
+    if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('0')
         res.innerHTML = '0'
@@ -197,21 +197,48 @@ function botao0() {
     
 }
 function botaoSoma() {
+    if (vetor.indexOf('+') > 0 || vetor.indexOf('-') > 0 || vetor.indexOf('*') > 0 || vetor.indexOf('/') > 0) {
+        resultado()
+        res.innerHTML = result
+        vetor = []
+        vetor.push(result)
+    }
+    
     vetor.push('+')
     res.innerHTML += ' + '
-    
 }
 function botaoSub() {
+    if (vetor.indexOf('+') > 0 || vetor.indexOf('-') > 0 || vetor.indexOf('*') > 0 || vetor.indexOf('/') > 0) {
+        resultado()
+        res.innerHTML = result
+        vetor = []
+        vetor.push(result)
+    }
+
     vetor.push('-')
     res.innerHTML += ' - '
     
 }
 function botaoMult() {
+    if (vetor.indexOf('+') > 0 || vetor.indexOf('-') > 0 || vetor.indexOf('*') > 0 || vetor.indexOf('/') > 0) {
+        resultado()
+        res.innerHTML = result
+        vetor = []
+        vetor.push(result)
+    }
+
     vetor.push('*')
     res.innerHTML += ' * '
     
 }
 function botaoDiv() {
+    if (vetor.indexOf('+') > 0 || vetor.indexOf('-') > 0 || vetor.indexOf('*') > 0 || vetor.indexOf('/') > 0) {
+        resultado()
+        res.innerHTML = result
+        vetor = []
+        vetor.push(result)
+    }
+
     vetor.push('/')
     res.innerHTML += ' / '
     
