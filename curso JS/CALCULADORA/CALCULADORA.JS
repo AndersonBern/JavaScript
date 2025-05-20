@@ -4,6 +4,7 @@ let n2 = ''
 let vetor = []
 
 let res = document.getElementById('res')
+let msg = document.getElementById('msg')
 
 let soma = 0
 let sub = 0
@@ -74,10 +75,12 @@ function zerar() {
     sub = 0
     mult = 0
     div = 0
-    res.innerHTML = '<p>Vamos calcular...</p>'
+    res.innerHTML = ''
+    msg.innerHTML = "Vamos calcular..."
 }
 
 function botao1() {
+    msg.innerHTML = ''
     if (vetor.length == 1 && vetor[0] == result){
         vetor = []
         vetor.push('1')
@@ -90,6 +93,7 @@ function botao1() {
 }
 
 function botao2() {
+    msg.innerHTML = ''
     if (vetor.length == 1 && vetor[0] == result){
         vetor = []
         vetor.push('2')
@@ -102,6 +106,7 @@ function botao2() {
 }
 
 function botao3() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('3')
@@ -114,6 +119,7 @@ function botao3() {
 }
 
 function botao4() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('4')
@@ -126,6 +132,7 @@ function botao4() {
 }
 
 function botao5() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('5')
@@ -138,6 +145,7 @@ function botao5() {
 }
 
 function botao6() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('6')
@@ -149,6 +157,7 @@ function botao6() {
     }    
 }
 function botao7() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('7')
@@ -161,6 +170,7 @@ function botao7() {
     
 }
 function botao8() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('8')
@@ -173,6 +183,7 @@ function botao8() {
     
 }
 function botao9() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('9')
@@ -185,6 +196,7 @@ function botao9() {
     
 }
 function botao0() {
+    msg.innerHTML = ''
     if (vetor.length == 0 && vetor[0] == result) {
         vetor = []
         vetor.push('0')
@@ -206,6 +218,7 @@ function botaoSoma() {
     
     vetor.push('+')
     res.innerHTML += ' + '
+
 }
 function botaoSub() {
     if (vetor.indexOf('+') > 0 || vetor.indexOf('-') > 0 || vetor.indexOf('*') > 0 || vetor.indexOf('/') > 0) {

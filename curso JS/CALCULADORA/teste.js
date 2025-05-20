@@ -1,3 +1,3 @@
-let vetor = [1, 2, '*', 3, 4]
+let msg = ''
 
-console.log(vetor.indexOf('+', '-', '*', '/'))
+console.log(msg.length)

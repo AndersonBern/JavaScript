@@ -1,43 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
+    width: 100vw;
+    height: 100dvh;
     background-color: aquamarine;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-div {
-    background-color: rgb(162, 67, 250);
-    border-radius: 5px;
-    padding: 5px;
-    margin: auto;
-    width: 120px;
-    font: normal 10px Arial;
-
+main {
+    background-color: rgba(128, 128, 128, 0.849);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(240, 6, 17, 0.747);
 }
-div#res {
-    background-color: aliceblue;
+#tela {
+    background-color: white;
     border-radius: 5px;
-    margin: auto;
-    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.712);
+    
+    width: 283px;
+    height: 50px;
     padding: 10px;
     margin-bottom: 5px;
-    
+    font-size: 2em;
 }
-p#linha1 {
-    margin: auto;
-    padding: 3px;
-    background-color: orange;
+
+#calculadora {
+    width: 280px;
+    height: 300px;
+
+    display: grid;
+    grid-template: repeat(4, 70px) / repeat(4, 70px);
+    gap: 1px;
+
 }
-p#linha2 {
-    margin: auto;
-    padding: 3px;
-    background-color: orange;
+input {
+    font-size: 1.1em;
 }
-p#linha3 {
-    margin: auto;
-    padding: 3px;
-    background-color: orange;
-}
-p#linha4 {
-    margin: auto;
-    padding: 3px;
-    background-color: orange;
+
+input:hover {
+    background-color: rgba(248, 219, 165, 0.979);
+    font-size: 1.4em;
+    font-weight: bolder;
+    border: 1px solid black;
+    transform: scale(1.03);
 }
