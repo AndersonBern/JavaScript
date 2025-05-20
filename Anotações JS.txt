@@ -436,6 +436,82 @@ Para chamar uma função basta digitar o nome dela e o parametro.
 
 
 
+* PARAMETROS: São os valores que vão dentro dos parenteses em 
+	      uma função.
+
+	ex.: function teste(parametro, parametro)
+
+* ARGUMENTOS: São os valores que os parâmetros recebem.
+
+	ex.: teste(n1, n2)
+
+* RETORNO: É o valor que a função retorna ao fim de sua execução.
+
+	ex.: return n1 + n2
+
+
+
+ARROW FUNCTIONS
+
+Arrow functions são uma forma mais concisa de escrever funções em
+JavaScript. Ofercem uma sintaxe mais curta e sumples, 
+especialmente útil para FUNÇÕES ANÔNIMAS.
+
+() => : Sintaxe da arrow function.
+
+
+Função NORMAL: 
+		function soma(a, b) {
+			return a + b;
+		}
+
+Arrow function: 
+		const soma = (a, b) => {
+			return a + b;
+		}; 
+
+A palavra chave FUNCTION foi removida, e no lugar foi colocada uma
+'const'(pode ser 'let' também).
+E temos uma FLECHA( => ) entre os parametros e o corpo da função.
+
+
+SIMPLIFICADAS
+
+Arrow function simplificada(Caso só tenha UMA linha de retorno)
+
+	const soma = (a, b) => a + b;
+
+
+Arrow function simplificada(Caso ela não tenha parametros)
+
+	const digaOi = () => 'oi!';
+
+
+Arrow function simplificada(Caso só tenha 1 parametro)
+
+	const quadrado = n => n * n;
+
+Quando a arrow function só tem 1 parametro os parenteses são 
+opcionais. Mas quando a arrow function NÃO TEM parametros ou mais
+que UM parametro, os parenteses são OBRIGATÓRIOS.
+
+
+
+METODO .MAP()
+
+Em JavaScript, map() é um método de array que cria um novo array 
+com base no array original, aplicando uma função de callback a 
+cada elemento do array original. A função callback pode modificar
+cada elemento e o map() retorna um novo array com os elementos 
+modificados, sem alterar o array original.
+
+ex.: const numeros = [1, 2, 3, 4, 5];
+
+     const numerosDobrados = numeros.map(numero => numero * 2);
+
+	O MAP vai pegar cada numero de dentro do array usando a
+	função callback(numero) e retornar dentro de outro array
+	os valores com as alterações desejadas.
 
 
 
