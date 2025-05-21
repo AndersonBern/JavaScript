@@ -525,7 +525,8 @@ SetInterval detém uma função que:
 com ID 'res'. SEMPRE USE .innerHTML depois do ID.
 
 2- Vai criar outra variável que receberá o valor da variavel 
-'cronometro' convertida em número. E adicionar + 1 a soma total.
+'cronometro' convertida em número inteiro. E adicionar + 1 a soma
+total.
 
 3- vai mostrar o valor de 'soma', toda vez que o intervalo 
 executar a função novamente. A cada 1000 milisegundos(1s).
@@ -542,6 +543,74 @@ clearInterval(variavel do metodo); : Para o intervalo do
 	     }
 
 Vai parar o metodo setInterval que esta na variavel 'tempo'.
+
+
+
+
+CLASSES JS
+
+
+Basicamente as CLASSES são como fábricas para criar objetos.
+Pode se dizer que são 'FUNÇÕES ESPECIAS' para criaçõa de objetos.
+Assim como as fabricas precisam das maquinas para construir os 
+objetos, as CLASSSES no JS usam um méodo chamdo CONSTRUCTOR() para
+fabricar objetos.
+SEMPRE para nomear uma classe use letra maiuscula no inicio da 
+palavra por convenção.
+Para FUNCIONAR as classes SEMPRE devem ser declaradas ANTES do 
+local no código onde vai contruir um novo objeto.
+
+class{} : Para criar a classe.
+
+constructor(){} : Para criar o contrutor de objetos.
+
+this. : Para criar instâncias de objetos.
+
+ex.:  class Carro{
+    	constructor(v1, v2, v3){
+        	this.marca = v1;
+        	this.modelo = v2;
+        	this.ano = v3;
+    	}
+      }
+
+1- Cria a classe 'Carro';
+2- Criar a função que vai construir novos objetos e os valores
+   que essa função irá receber.
+3- Cria as instancias que o novo objeto carro irá ter.
+
+
+Para criar um novo objeto:
+
+ex.: const uno = new Carro('Fiat', 'Uno', 2001);
+
+Para criar um novo objeto basta chamar a classe com o método 'NEW'
+e colocar os valores das instancias dentro dos parenteses.
+
+Também podemos criar novos métodos dentro de uma classe, qua nada
+mais será que uma nova FUNÇÃO dentro da classe além do constructor.
+
+ex.: class Carro{
+    constructor(v1, v2, v3){
+        this.marca = v1;
+        this.modelo = v2;
+        this.ano = v3;
+    }
+    buzina(){
+        return this.modelo + ' Buzinou: Biiiii!'
+    }
+}
+
+1- Criou um novo método 'buzina';
+2- Vai retornar o MODELO do objeto referido e uma mensagem.
+
+
+Para mudar um valor dentro de um objeto:
+
+ex.: gol.ano = 2010;
+
+Pronto, basta apenas apontar qual o objeto e a instancia que 
+deseja ser alterada, e dar o novo valor a instancia.
 
 
 
