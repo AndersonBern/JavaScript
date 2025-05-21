@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut e SetInterval</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        main {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+    
+        }
+        section{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        div#res {
+            font-size: 2em;
+        }
+
+        #comecar{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(58, 243, 58);
+            margin: 10px;
+        }
+        #parar{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+        }
+
+        input:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>SetTimeout e setInterval</h1>
+        <div id="res">0</div>
+
+        <section>
+            <input id="comecar" type="button" value="Começar contagem" onclick="começar()">
+
+            <input id="parar" type="button" value="Parar contagem" onclick="parar()">
+        </section>
+    </main>
+    <script src="setInterval.js"></script>
+</body>
+</html>

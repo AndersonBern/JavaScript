@@ -58,9 +58,6 @@ String(n.value) ou n.toString() : Converte um numero para string.
 
 document.write() : Vai escrever na tela. (Print)
 
-<br/> : Quebra de linha.
-
-<strong> : Negrito.
 
 .toFixed() : Mostra o numero de casas depois da virgula de um numero real.
 
@@ -127,17 +124,6 @@ Operadores Ternário
 
 Eventos DOM
 
-width: É a altura da <div>
-
-height: É a largura da <div>
-
-		ex.: div#area {
-            		width: 200px;
-            		height: 200px;
-		}
-
-		Define a altura e largura para 200px.
-
 
 function : Função.
 
@@ -156,17 +142,9 @@ Ou também posso chamar a função para a ação com o mouse com:
 
 	.addEventListener() : Adiciona um evento para a ação.
 
-		ex.:    a.addEventListener('click', clicar)
-        		a.addEventListener('mouseenter', entrar)
-        		a.addEventListener('mouseout', sair)
-
-
-margin-top: para dar um espaço na parte de cima de um elemento.(EM CSS)
-
-	ex.: div#res {
-           	 margin-top: 20px;
-       	     }
-
+		ex.:    a.addEventListener('click', clicar())
+        		a.addEventListener('mouseenter', entrar())
+        		a.addEventListener('mouseout', sair())
 
 
 Condições
@@ -209,44 +187,11 @@ switch(): É uma estrutura que utiliza varios 'cases' para testar
 
 HTML:
 
-<header>: é o cabeçalho do site
-<section>: é o centro do site, onde vai o conteúdo.
-<footer>: é o rodapé do site.
-
-Para codar CSS em um arquivo externo e utilizar no site:
-
-<link>: Para criar um link.
-	<link rel="stylesheet" href="estilo.css">
-
-	Vai criar um link que utiliza o arquivo externo.
-
-
 onload = function() : Para carregar a função pro html.
 
 	ex.: <body onload="carregar()">
 		Vai carregar a função 'carregar()' para o body
 		do HTML.
-
-CSS:
-
-border-radius: Parar arredondar as bordas.
-
-padding: Para aumentar o tamnaho do elemento.
-
-width: Largura.
-length: Altura.
-
-margin: Para centralizar o elemento.
-
-text-align: Para centralizar o texto.
-
-box.shadow: Para adicionar sombra ao elemento.
-
-	ex.: box-shadow: 5px 5px 10px black;
-
-	São 3 parametros: 1 - Deslocamento lateral;
-			  2 - Deslocamento vertical;
-			  3 - Espalhamento.
 
 
 JAVASCRIPT:
@@ -299,7 +244,7 @@ Para saber se uma 'input radio' foi marcada:
 	ex.: if (radio[0].checked)
 
 	Se a primeira opção do radio estiver marcada, vai...
-	Cason tenham mais opções vai usando 'else if'.
+	Caso tenham mais opções vai usando 'else if'.
 
 Para adicionar algo ao HTML com JS:
 
@@ -512,6 +457,98 @@ ex.: const numeros = [1, 2, 3, 4, 5];
 	O MAP vai pegar cada numero de dentro do array usando a
 	função callback(numero) e retornar dentro de outro array
 	os valores com as alterações desejadas.
+
+
+
+SETTIMEOUT
+
+setTimeout(função(){})
+
+O método setTimeout() Ativa uma função dentro dele apenas UMA VEZ
+quando der o tempo especifico.
+
+
+ex.: function teste () {
+    	setTimeout(function(){
+        	console.log('Apareceu!!!')
+    	}, 2000);
+     }
+
+O setTimeout detém uma FUNÇÃO(neste caso,ANONIMA e sem parametros).
+nesta função irá aparecer uma mensagem(console.log) assim que o 
+tempo de 2000 MILISEGUNDOS passar.
+A estruturação consiste em:
+	1- função()
+	2- O que vc quer que aconteça.{}
+	3- Tempo para isso acontecer();
+
+
+CLEARTIMEOUT
+
+clearTimeout(variavel do metodo); : Cancela o tempo previsto para
+				    o setTimeout() funcionar.
+
+	ex.: function parar() {
+    		clearTimeout(contador);
+    		console.log('PAROU!')
+	     }
+
+	O CLEARTIMEOUT vai parar o setTimeout.
+
+
+[DICA] Quando você dá um nome a um método, ele vira uma variavél
+       global.
+		ex.: contador = setTimeout(function(){})
+
+	'contador' virou uma variável global, sem usar LET, CONST
+	ou VAR.
+
+
+SETINTERVAL
+
+O setInterval() é um método qu determina uma um intervalo para 
+que a sua função seja executada novamente.
+
+	ex.:  tempo = setInterval(function(){
+        		var cronometro = document.getElementById
+			('res').innerHTML;
+
+        		var soma = parseInt(cronometro)+1;
+
+        		document.getElementById('res').innerHTML
+			= soma
+    		}, 1000);
+
+SetInterval detém uma função que:
+
+1- Vai criar uma váriavel para capturar o valor dentro da tag 
+com ID 'res'. SEMPRE USE .innerHTML depois do ID.
+
+2- Vai criar outra variável que receberá o valor da variavel 
+'cronometro' convertida em número. E adicionar + 1 a soma total.
+
+3- vai mostrar o valor de 'soma', toda vez que o intervalo 
+executar a função novamente. A cada 1000 milisegundos(1s).
+
+
+CLEARINTERVAL
+
+clearInterval(variavel do metodo); : Para o intervalo do 
+				     setInterval().
+
+	ex.: function parar () {
+    		clearInterval(tempo);
+    		document.getElementById('res').innerHTML ='Parou'
+	     }
+
+Vai parar o metodo setInterval que esta na variavel 'tempo'.
+
+
+
+
+
+
+
 
 
 
