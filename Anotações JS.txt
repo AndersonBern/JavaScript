@@ -614,6 +614,92 @@ deseja ser alterada, e dar o novo valor a instancia.
 
 
 
+JSON
+
+JSON (JavaScript Object Notation) é um formato de dados leve
+e flexível, utilizado para armazenar e trocar informações entre
+sistemas, principalmente em aplicações web, já que praticamente
+toda linguagem de programação pode ler TEXTO.
+BASICAMENTE, é uma forma de converter OBJETOS em texto e o 
+contrário também TEXTO em objetos.
+
+
+* JSON.stringfy() : Converte OBJETOS em TEXTO padrão JSON.
+
+	ex.: const carro = {
+    		marca: 'Fiat',
+    		modelo: 'Uno',
+    		ano: 2000
+		}
+
+	     let texto = JSON.stringify(carro);
+
+A váriavel 'texto' vai converter o OBJETO 'carro' em TEXTO padrão
+JSON. Que pode ser lido em qualquer ambiente.
+
+
+* JSON.parse() : Para converter TEXTO no padrão JSON em OBJETOS.
+
+	ex.: let obj = JSON.parse(texto);
+
+     	     console.log(obj)
+
+1- A variável 'obj' vai converter o TEXTO(da variável 'texto') em
+   OBJETO novamente.
+
+2- Vai mostrar no console. Pois desta forma objeto só ficara 
+   legivel no console.
+
+
+
+
+AJAX
+
+XMLHttpsRequest() : É uma API em JavaScript que permite que 
+		    navegadores web enviem e recebam requisições 
+		    HTTP de forma assíncrona. Sem que seja 
+		    necessário estar no site literalmente.
+
+.open('GET', url da API) : Para configurar a requizição do JSON 
+			   de uma API.
+
+.send() : Para ENVIAR e requisição.
+
+this.responseText : Para pegar o TEXTO que foi retornado da 
+		    requisição.
+
+.onload() : O que fazer quando carregar a requisição.
+
+
+ex.: function buscarCep() {
+    	let cep = document.getElementById('cep').value;
+
+    	let ajax = new XMLHttpRequest();
+
+    	ajax.open('GET', 'https://viacep.com.br/ws/' + cep + 
+	'/json/');
+
+    	ajax.send();
+
+    	ajax.onload = function () {
+
+        	let obj = JSON.parse(this.responseText)
+
+		document.getElementById('res').innerHTML = obj;
+	}}
+
+
+1- A variavel 'cep' vai pegar o valor digitado no INPUT no HTML.
+2- Cria a variavel 'ajax' para iniciar uma NOVA requisição.
+3- Configura a requisição com o método 'GET' e o link já com o 
+   valor da variavel 'cep' na URL, para buscar o CEP especifico.
+4- Envia a requisição.
+5- Cria a função para quando CARREGAR(resposta) a requisição.
+6- Cria a variavel 'obj' e transforma a resposta Texto JSON
+   (this.responseText) em um objeto.
+7- Mostra no HTML.
+
+
 
 
 
