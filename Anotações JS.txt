@@ -318,8 +318,7 @@ Para adicionar um valor em um espaço especifico:
 		     do vetor.
 
 
-.sort() : Vai organizar os valores dentro de um vetor. do
-	     menor para o maior.
+
 
 		(OBS.: Este método só pega a
 	        primeira casa do valor e não o valor total.
@@ -353,9 +352,56 @@ função:
 	E o '.focus()' é para o icone de texto voltar para o
 	input, e poder digitar sem precisar apagar o anterior.
 
-	
-	
-	
+METODOS PARA MATRIZES
+
+.push(): Para adicionar um item no ULTIMO indice da MATRIZ.
+
+.pop() : Para apagar o ULTIMO item da MATRIZ.
+
+.shift(): Para apagar o PRIMEIRO item da MATRIZ.
+
+.unshift(): Para adicionar um item no PRIMEIRO indice da MATRIZ.
+
+
+.splice(1, 0, 'msg') : Para adicionar itens em lugares especificos
+		       ou substituir.
+
+	ex.: lista.splice(1, 0, 'Fiat Uno', 'VW Gol');
+
+	VAI ADICIONAR OS 2 ITENS NO INDICE [1] E VAI APAGAR 0.
+
+	ENTRE OS PARENTESES:
+		1- Qual o local onde quero adicionar o item.
+		2- Quantos itens eu quero DELETAR a partir do 
+		   indice dado anteriormente.
+		3- O item que eu quero adicionar.
+		   (Pode ser mais de 1).
+
+.concat(): PARA CONCATENAR MATRIZES.
+
+	ex.: lista1.concat(lista2);
+
+	VAI CONCATENAR A lista1() COM A lista2().
+
+.slice(): Para dividir uma matriz.
+
+	ex.: x = lista.slice(2, 4);
+
+	A variável 'x' vai receber os itens do indice [2] até o 
+	indice [4].
+
+.sort(): Vai organizar os valores dentro de um vetor. do
+	 menor para o maior. Ou em ordem ALFABETICA.
+
+	(OBS.: Este método só pega a
+	 primeira casa do valor e não o valor total.
+
+	 ex.: SE TIVEREM OS VALORES [2, 4, 300] DENTRO
+	      DE UM VETOR, O MÉTODO .sort vai organizar
+	      assim: [2, 300, 4] pois a primeira casa
+	      de 300 é '3', menor que 4.)
+
+.reverse(): Para REVERTER a ordem de uma matriz.
 
 
 
