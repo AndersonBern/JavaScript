@@ -1,19 +1,9 @@
 Jasva Script
 
-<h1> : Titulo da página.
-
-<p> : Parágrafo.
-
-<style> : CSS. Tudo escrito nessa tag é CSS!. FICA EM <head> do HTML.
-
-	background-color : cor de fundo da página.
-
-	color : cor das letras da página.
-
-	font : estilo de fonte com 3 parametros.
-		ex.: font: normal 20pt arial;
-
-<script> : Parte onde fica o código de JS. Obs.: Fica em <body> do HTML.
+location.reload(true) : Para recarregar a página.
+	
+	ex.: <button onclick="location.reload(true)">
+	     Reiniciar</button>
 
  window. : Para aparecer uma janela de interação na página.
 
@@ -368,6 +358,7 @@ METODOS PARA MATRIZES
 
 	ex.: lista.splice(1, 0, 'Fiat Uno', 'VW Gol');
 
+
 	VAI ADICIONAR OS 2 ITENS NO INDICE [1] E VAI APAGAR 0.
 
 	ENTRE OS PARENTESES:
@@ -576,6 +567,10 @@ total.
 
 3- vai mostrar o valor de 'soma', toda vez que o intervalo 
 executar a função novamente. A cada 1000 milisegundos(1s).
+
+	PARA CHAMAR UMA FUNÇÃO JÀ EXISTENTE:
+
+	ex.: let sorteio = setInterval(loop, 100);
 
 
 CLEARINTERVAL
