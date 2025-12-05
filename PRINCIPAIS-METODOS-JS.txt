@@ -1,0 +1,132 @@
+PRINCIPAIS METODOS EM JS
+
+1–15 — Strings
+
+
+toLowerCase() – Converte a string para letras minúsculas.
+
+toUpperCase() – Converte a string para letras maiúsculas.
+
+trim() – Remove espaços do início e do fim da string.
+
+trimStart() – Remove espaços apenas do começo.
+
+trimEnd() – Remove espaços apenas do final.
+
+slice(inicio, fim) – Retorna parte da string entre dois índices.
+
+substring(a, b) – Retorna parte da string sem aceitar índices negativos.
+
+replace(a, b) – Substitui a primeira ocorrência de um texto.
+
+replaceAll(a, b) – Substitui todas as ocorrências do texto.
+
+includes(valor) – Verifica se a string contém o valor indicado.
+
+startsWith(valor) – Verifica se a string começa com um valor.
+
+endsWith(valor) – Verifica se a string termina com um valor.
+
+split(sep) – Divide a string e retorna um array.
+
+charAt(i) – Retorna o caractere no índice.
+
+repeat(n) – Repete a string n vezes.
+
+
+🔹 16–35 — Arrays
+
+
+push(valor) – Adiciona um item ao final do array.
+
+pop() – Remove e retorna o último item.
+
+shift() – Remove e retorna o primeiro item.
+
+unshift(valor) – Adiciona um item no começo do array.
+
+forEach(fn) – Executa uma função para cada elemento.
+
+map(fn) – Cria um novo array transformando cada item.
+
+filter(fn) – Retorna apenas os itens que passam no teste.
+
+find(fn) – Retorna o primeiro item que satisfaz a condição.
+
+findIndex(fn) – Retorna o índice do primeiro item que passa no teste.
+
+some(fn) – Retorna true se pelo menos um item for verdadeiro.
+
+every(fn) – Retorna true se todos os itens forem verdadeiros.
+
+reduce(fn, inicial) – Reduz o array a um valor acumulado.
+
+reduceRight(fn, inicial) – Igual ao reduce, mas começando do final.
+
+sort(fn) – Ordena os itens do array.
+
+reverse() – Inverte a ordem dos elementos.
+
+concat(outro) – Junta arrays em um novo array.
+
+join(sep) – Junta todos os itens em uma string.
+
+indexOf(valor) – Retorna o índice da primeira ocorrência.
+
+lastIndexOf(valor) – Retorna o índice da última ocorrência.
+
+flat(n) – Achata arrays internos em um único array.
+
+
+🔹 36–40 — Numbers / Math
+
+
+parseInt(str) – Converte texto em número inteiro.
+
+parseFloat(str) – Converte texto em número decimal.
+
+Number(valor) – Converte quase qualquer valor para número.
+
+Math.floor(x) – Arredonda para baixo.
+
+Math.ceil(x) – Arredonda para cima.
+
+🔹 41–45 — Objetos / JSON
+
+Object.keys(obj) – Retorna um array com as chaves.
+
+Object.values(obj) – Retorna um array com os valores.
+
+Object.entries(obj) – Retorna pares [chave, valor].
+
+JSON.stringify(obj) – Converte objeto em texto JSON.
+
+JSON.parse(str) – Converte texto JSON em objeto.
+
+
+🔹 46–50 — Utilidades gerais
+
+
+Array.isArray(valor) – Verifica se o valor é um array.
+
+setTimeout(fn, ms) – Executa uma função após certo tempo.
+
+setInterval(fn, ms) – Executa repetidamente em intervalos.
+
+Date.now() – Retorna o timestamp atual.
+
+structuredClone(obj) – Faz cópia profunda de objetos/arrays.
+
+
+🔹 OBJETO
+
+Object.keys(obj) – Retorna um array com as propriedades enumeráveis 
+		   próprias.
+
+Object.values(obj) – Retorna um array com os valores das propriedades 
+		     enumeráveis próprias.
+
+Object.entries(obj) – Retorna um array de pares [chave, valor] de 
+		      propriedades enumeráveis.
+
+Object.fromEntries(iterable) – Converte pares [chave, valor] em um objeto.
